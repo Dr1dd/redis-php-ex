@@ -1,0 +1,204 @@
+body, html {
+ background-color: #cccccc;
+ height: 100%;
+ margin: 0;
+ min-height: 100%;
+ background-attachment: fixed;
+}
+*{
+  box-sizing: border-box;
+}
+.mainWin{
+  margin: 0 auto; 
+  margin-bottom:75px;
+  margin-top: 75px;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 15px;
+  width: 85%;
+  border-radius: 15px;
+  border-bottom-width: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+.jailBlock{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.jailCells{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 20vh;
+  padding-bottom: 0px;
+  max-height: 40vh;
+  min-width: 23vh;
+  padding: 15px;
+  margin: 15px;
+  min-height: 30vh;
+  position: relative;
+  background-color: #b5b5b5;
+}
+.jailAccountText{
+    right: -15px;
+    position: relative;
+}
+
+.inputBlock{
+	display: flex;
+	justify-content: center;
+}
+input[type=text] {
+  border: 2px solid red;
+  border-radius: 4px;
+  width: 30vh;
+}
+input[type=number] {
+  border: 2px solid red;
+  border-radius: 4px;
+  width: 30vh;
+}
+select{
+  border-color: red;
+    border-width: 2px;
+    border-radius: 6px;
+}
+.inputTransaction{
+  margin: 5px;
+  height: 4vh;
+  padding: 4px;
+}
+.delBtn{
+	color: red;
+    border: 1px solid #d30000;
+    border-radius: 10px;
+    height: 21px;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-decoration: none;
+    cursor: pointer;
+	background-color: #c7bcbc;
+	position:absolute;
+    bottom: 1vh;
+    left: 2vh;
+	transition: all 0.25s ease-in-out;
+}
+.addBtn{
+  color: red;
+    border: 1px solid #d30000;
+    border-radius: 10px;
+    height: 21px;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-decoration: none;
+    cursor: pointer;
+        position: absolute;
+    bottom: 1vh;
+    left: 18vh;
+  background-color: #c7bcbc;
+
+  transition: all 0.25s ease-in-out;
+}
+.delBtn:hover{
+	border: 2px solid #d30000;
+	font-weight: 700;
+	background-color: #ffffff;
+	padding:3px;
+	padding-top:0px;
+}
+.imgBlock{
+	display: flex;
+	justify-content: center;
+  	width: 15vh;
+}
+.imgClass{
+	max-width: 20vh;
+	padding: 30px;
+	max-height: 20vh;
+    margin: 15px;
+}
+.button1{
+	display:inline-block;
+	padding:15px;
+	margin: 15px;
+	text-decoration:none;
+	text-transform:uppercase;
+	background-color: #df2626ad;
+    color: #FFFFFF;
+	box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+	text-align:center;
+}
+.buttonSubmit{
+	display:inline-block;
+	padding:5px;
+  margin: 5px;
+	border:none;
+	text-decoration:none;
+	text-transform:uppercase;
+	background-color: #f71700;
+    color: #fff;
+	box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+	text-align:center;
+}
+.overlaypop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlaypop:target {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.popup .close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #fff;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+.contentpop {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-color: #fff;
+  padding: 10px;
+  min-height: 50vh;
+  border-top: 35px solid #f71700;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+.contentpop h1{
+    text-align: center;
+    margin-top: -6.5vh;
+    color: #fff;
+}
+.transactionBlock{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
